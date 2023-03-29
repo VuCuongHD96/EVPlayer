@@ -39,7 +39,7 @@ public class EVPlayerController: UIViewController {
     
     // MARK: - Initializer
     
-    init(configuration: EVConfiguration) {
+    public init(configuration: EVConfiguration) {
         self.configuration = configuration
         super.init(nibName: nil, bundle: nil)
     }
@@ -92,7 +92,7 @@ public class EVPlayerController: UIViewController {
         dismissButton.contentHorizontalAlignment = .fill
         
         evFullScreenPlayer.addSubview(dismissButton)
-
+        
         dismissButton.widthAnchor.cuiSet(to: 20)
         dismissButton.heightAnchor.cuiSet(to: 20)
         dismissButton.cuiPinTopToSuperView(constant: 6)
